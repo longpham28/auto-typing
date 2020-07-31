@@ -22,6 +22,5 @@ function type() {
   pressKey(nowInput);
 }
 
-for (let i = 0; i < 2000; i++) {
-  setTimeout(type, 100);
-}
+let temp_ = setInterval(type, 100);
+clearInterval(temp_);
